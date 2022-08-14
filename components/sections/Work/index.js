@@ -21,13 +21,25 @@ const Work = () => {
         </motion.h3>
       </Row>
       <WorkItem
-        image={<Image src={AnnaPortfolioImage} objectFit="cover "></Image>}
+        image={
+          <Image
+            src={AnnaPortfolioImage}
+            objectFit="cover"
+            loading="eager"
+          ></Image>
+        }
         technologies={["React", "NextJS", "TailwindCSS", "Prismic"]}
         name={"Anna's Portfolio"}
         description={"My cute bb's design portfolio :D"}
       ></WorkItem>
       <WorkItem
-        image={<Image src={ShareSplitImage} objectFit="cover"></Image>}
+        image={
+          <Image
+            src={ShareSplitImage}
+            objectFit="cover"
+            loading="eager"
+          ></Image>
+        }
         technologies={["React", "Typescript", "Redux", "Firebase"]}
         name={"ShareSplit"}
         description={
@@ -35,7 +47,9 @@ const Work = () => {
         }
       ></WorkItem>
       <WorkItem
-        image={<Image src={GuildImage} objectFit="cover"></Image>}
+        image={
+          <Image src={GuildImage} objectFit="cover" loading="eager"></Image>
+        }
         technologies={["React", "GatsbyJS", "Prismic"]}
         name={"The Guild of Entrepreneurs"}
         description={
