@@ -19,13 +19,7 @@ const Nav = () => {
     duration: 0.075,
   };
 
-  const linkContent = [
-    "Home",
-    "About",
-    "Work",
-    "Contact",
-    <GitLogo key={uuidv4()}></GitLogo>,
-  ];
+  const linkContent = ["Home", "About", "Work", "Contact", <GitLogo></GitLogo>];
   const delayStart = 0.6;
   const delayIncrement = 0.125;
 
@@ -36,8 +30,7 @@ const Nav = () => {
   const links = linkContent.map((content, index) => {
     return (
       <Link key={uuidv4()} href="">
-        <motion.as
-          key={uuidv4()}
+        <motion.a
           initial={linkInitial}
           animate={{
             ...linkFinal,
@@ -50,7 +43,7 @@ const Nav = () => {
           className="hover:text-highlight2 cursor-pointer duration-75"
         >
           {content}
-        </motion.as>
+        </motion.a>
       </Link>
     );
   });

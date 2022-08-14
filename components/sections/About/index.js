@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="full-width-section">
+    <div id="about" className="full-width-section">
       <Row ss={1} es={7} sm={2} em={10} sl={3} el={13} sml={3} eml={9}>
         <motion.h3
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
-          className="y-6 md:my-8 text-highlight2 text-center md:text-left"
+          className="y-6 my-8 text-highlight2 text-center md:text-left"
         >
           About
         </motion.h3>
