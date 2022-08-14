@@ -12,7 +12,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-highlight2"
         >
-          Let's Connect
+          Let{"'"}s Connect
         </motion.h3>
       </Row>
     </div>
