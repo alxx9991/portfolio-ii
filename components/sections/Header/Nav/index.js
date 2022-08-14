@@ -19,7 +19,13 @@ const Nav = () => {
     duration: 0.075,
   };
 
-  const linkContent = ["Home", "About", "Work", "Contact", <GitLogo></GitLogo>];
+  const linkContent = [
+    "Home",
+    "About",
+    "Work",
+    "Contact",
+    <GitLogo key={uuidv4()}></GitLogo>,
+  ];
   const delayStart = 0.6;
   const delayIncrement = 0.125;
 
