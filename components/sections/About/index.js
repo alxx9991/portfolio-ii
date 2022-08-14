@@ -10,7 +10,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
-          className="y-6 my-8 text-highlight2 text-center md:text-left"
+          className="my-8 text-highlight2 text-center md:text-left"
         >
           About
         </motion.h3>
