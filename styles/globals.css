@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Semibold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    @apply font-general;
+    @apply bg-bg;
+    @apply text-white;
+    @apply text-[14px] md:text-[15px] xl:text-[16px];
+    font-weight: 400;
+    min-height: 100%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  h1 {
+    @apply text-h2 font-semibold md:text-h1;
+  }
+
+  h2 {
+    @apply text-h3 md:text-h2;
+  }
+
+  h3 {
+    @apply text-subtitle md:text-h3;
+  }
+
+  p {
+    @apply text-b2 md:text-b1;
+  }
+
+  .subtitle {
+    @apply text-b1 font-semibold md:text-subtitle;
+  }
+
+  .caption {
+    @apply text-caption-small md:text-caption;
+  }
+}
+
+@layer components {
+  .full-width-section {
+    @apply grid col-sm md:col-md xl:col-xl grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl 2xl:grid-cols-2xl gap-x-8 gap-y-0 md:text-left md:min-h-[0];
+  }
+
+  .perspective-wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .full-grid {
+    @apply grid grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl gap-x-8 gap-y-0 px-[8%] md:px-0 pb-24;
+  }
+
+  .content-gradient {
+    @apply bg-gradient-to-b from-primary40 to-bg/[0] px-10 py-8 md:px-16 md:py-12 rounded-lg;
+  }
+
+  .background {
+    @apply absolute h-full w-full -z-10 inset-0;
+  }
+}
