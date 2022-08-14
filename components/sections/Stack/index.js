@@ -52,7 +52,7 @@ const Stack = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="content-gradient"
         >
           <div className="grid gap-16 my-8 grid-cols-2 max-w-[25rem] mx-auto lg:grid-cols-3 lg:max-w-[40rem]">
