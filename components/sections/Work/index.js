@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <div className="full-width-section mt-24">
+    <div id="work" className="full-width-section mt-24">
       <Row ss={1} es={7} sm={2} em={10} sl={3} el={13} sml={3} eml={9}>
         <motion.h3
           initial={{ opacity: 0, y: -10 }}
@@ -24,7 +24,8 @@ const Work = () => {
         image={
           <Image
             src={AnnaPortfolioImage}
-            objectFit="cover"
+            width={864}
+            height={445}
             loading="eager"
           ></Image>
         }
@@ -36,7 +37,8 @@ const Work = () => {
         image={
           <Image
             src={ShareSplitImage}
-            objectFit="cover"
+            width={864}
+            height={445}
             loading="eager"
           ></Image>
         }
@@ -45,16 +47,25 @@ const Work = () => {
         description={
           "Free, accessible online web app allowing people to split bills, and calculate amounts oweing to each other. "
         }
+        link="https://share-split.netlify.app/"
+        github="https://github.com/alxx9991/split-share"
       ></WorkItem>
       <WorkItem
         image={
-          <Image src={GuildImage} objectFit="cover" loading="eager"></Image>
+          <Image
+            src={GuildImage}
+            width={864}
+            height={445}
+            loading="eager"
+          ></Image>
         }
         technologies={["React", "GatsbyJS", "Prismic"]}
         name={"The Guild of Entrepreneurs"}
         description={
           "Website landing page for building a community of entrepreneurs and freelancers.  "
         }
+        github="https://github.com/Guild-of-Entrepreneurs/site"
+        link="https://www.guildofentrepreneurs.com/"
       ></WorkItem>
     </div>
   );

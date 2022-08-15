@@ -1,5 +1,5 @@
 import Row from "../../../layout/Row";
-import Link from "next/link";
+import { Link, animateScroll as scroll } from "react-scroll";
 import GitLogo from "../../../../assets/git-logo.svg";
 import { motion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
@@ -16,7 +16,9 @@ const Nav = () => {
 
   const linkHover = {
     scale: 1.065,
-    duration: 0.075,
+    transition: {
+      duration: 0.1,
+    },
   };
 
   const linkContent = [
@@ -26,6 +28,15 @@ const Nav = () => {
     "Contact",
     <GitLogo key={uuidv4()}></GitLogo>,
   ];
+
+  const linkRefs = [
+    "#home",
+    "#about",
+    "#work",
+    "#contact",
+    "https://github.com/alxx9991",
+  ];
+
   const delayStart = 0.6;
   const delayIncrement = 0.125;
 
@@ -35,22 +46,22 @@ const Nav = () => {
 
   const links = linkContent.map((content, index) => {
     return (
-      <Link key={uuidv4()} href="">
-        <motion.a
-          initial={linkInitial}
-          animate={{
-            ...linkFinal,
-            transition: {
-              delay: delays[index],
-              duration: 0.4,
-            },
-          }}
-          whileHover={linkHover}
-          className="hover:text-highlight2 cursor-pointer duration-75"
-        >
-          {content}
-        </motion.a>
-      </Link>
+      <motion.a
+        key={uuidv4()}
+        initial={linkInitial}
+        animate={{
+          ...linkFinal,
+          transition: {
+            delay: delays[index],
+            duration: 0.4,
+          },
+        }}
+        whileHover={linkHover}
+        className="hover:text-highlight2 text-btn cursor-pointer duration-75"
+        href={linkRefs[index]}
+      >
+        {content}
+      </motion.a>
     );
   });
 

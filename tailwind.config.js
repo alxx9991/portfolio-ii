@@ -9,22 +9,26 @@ module.exports = {
       general: ["GeneralSans", "serif"],
     },
     fontSize: {
-      h1: ["min(14vw, 7.594rem)", { lineHeight: "110%", fontWeight: 700 }],
-      h2: ["5.063rem", { lineHeight: "110%", fontWeight: 500 }],
+      h1: ["min(14vw, 7.594rem)", { lineHeight: "110%", fontWeight: 600 }],
+      h2: ["5.063rem", { lineHeight: "110%", fontWeight: 600 }],
       h3: ["3.375rem", { lineHeight: "110%", fontWeight: 500 }],
-      subtitle: ["2.25rem", { lineHeight: "110%", fontWeight: 700 }],
+      subtitle: ["2.25rem", { lineHeight: "110%", fontWeight: 600 }],
       b1: ["1.5rem", { lineHeight: "150%" }],
       b2: ["1.125rem", { lineHeight: "150%" }],
       caption: [
-        "1.125rem",
-        { lineHeight: "110%", fontWeight: 500, letterSpacing: "0.25rem" },
-      ],
-      "caption-small": [
-        "1rem",
+        "min(2vw, 1.125rem)",
         {
           lineHeight: "110%",
           fontWeight: 500,
-          letterSpacing: "0.15rem",
+          letterSpacing: "min(0.35vw, 0.25rem)",
+        },
+      ],
+      "caption-small": [
+        "min(3vw, 1rem)",
+        {
+          lineHeight: "110%",
+          fontWeight: 500,
+          letterSpacing: "min(0.35vw, 0.15rem)",
         },
       ],
       btn: ["1.25rem", { lineHeight: "110%", fontWeight: 500 }],
