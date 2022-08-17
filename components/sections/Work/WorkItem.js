@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
 import LinkIcon from "../../../assets/link-icon.svg";
 import GitIcon from "../../../assets/git-logo-small.svg";
-import AnnaPortfolio from "../../../assets/annaPortfolio.svg";
 
 const WorkItem = ({ image, name, description, technologies, github, link }) => {
   const delays = [0.2, 0.4, 0.6, 0.8];
@@ -18,7 +17,7 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
   };
 
   const linkHover = {
-    scale: 1.065,
+    scale: 1.1,
     transition: {
       duration: 0.1,
     },
@@ -38,14 +37,8 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
         <motion.a
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-          whileHover={{
-            scale: 1.015,
-            transition: {
-              duration: 0.2,
-            },
-          }}
           viewport={{ once: true }}
-          className={`w-full flex flex-row items-center justify-center mb-4 ${imageCursor}`}
+          className={`w-full flex flex-row items-center justify-center mb-4 ${imageCursor} relative`}
           href={link ? link : ""}
           onClick={(e) => {
             if (!link) {
@@ -54,6 +47,20 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
           }}
         >
           {image}
+          <motion.div
+            className="absolute w-full max-w-[864px] h-full bg-highlight1 opacity-0 rounded-lg"
+            initial={{ opacity: 0 }}
+            whileHover={
+              link
+                ? {
+                    opacity: 0.6,
+                    transition: {
+                      duration: 0.1,
+                    },
+                  }
+                : null
+            }
+          ></motion.div>
         </motion.a>
         <div className="flex flex-col gap-2 md:gap-4 mb-24 md:mb-36">
           <Row className="flex flex-col-reverse gap-2 md:flex-row md:items-center md:justify-between">

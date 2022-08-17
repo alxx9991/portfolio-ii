@@ -26,18 +26,22 @@ const About = () => {
           <div className="flex flex-col gap-2 md:gap-4">
             <p className="subtitle">My Niche</p>
             <p>
-              I’m a frontend software-developer specialising in digital
-              experiences with a knack for finding optimal and efficient
-              solutions.
+              I’m a junior frontend software-developer with a keen interest in
+              building user-facing web platforms, with a focus on user
+              experience and performance optimisation.
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <p className="subtitle">Currently</p>
             <p>
               A computer science and mathematics student helping business owners
-              build their dream landing pages or mentoring students in
+              build their dream landing pages or mentoring other students in
               mathematics and their careers.
             </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="subtitle">Outside of work</p>
+            <p>You can find me at the gym or working on my car :{")"}</p>
           </div>
         </motion.div>
       </Row>

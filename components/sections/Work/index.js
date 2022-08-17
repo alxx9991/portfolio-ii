@@ -29,9 +29,11 @@ const Work = () => {
             loading="eager"
           ></Image>
         }
-        technologies={["React", "NextJS", "TailwindCSS", "Prismic"]}
+        technologies={["React", "NextJS", "TailwindCSS"]}
         name={"Anna's Portfolio"}
-        description={"My cute bb's design portfolio :D"}
+        description={
+          "Aesthetic, animated portfolio for a product designer built with modern Javascript and CSS frameworks."
+        }
       ></WorkItem>
       <WorkItem
         image={
@@ -45,7 +47,7 @@ const Work = () => {
         technologies={["React", "Typescript", "Redux", "Firebase"]}
         name={"ShareSplit"}
         description={
-          "Free, accessible online web app allowing people to split bills, and calculate amounts oweing to each other. "
+          "Free, accessible online web app allowing people to split bills, and calculate amounts owing to each other. Built with Firebase as a Backend-as-a-Service."
         }
         link="https://share-split.netlify.app/"
         github="https://github.com/alxx9991/split-share"
@@ -62,7 +64,7 @@ const Work = () => {
         technologies={["React", "GatsbyJS", "Prismic"]}
         name={"The Guild of Entrepreneurs"}
         description={
-          "Website landing page for building a community of entrepreneurs and freelancers.  "
+          "Website landing page for building a community of entrepreneurs and freelancers. Built with Prismic as a headless content management system."
         }
         github="https://github.com/Guild-of-Entrepreneurs/site"
         link="https://www.guildofentrepreneurs.com/"

@@ -9,7 +9,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="mt-48 fade-from-left"
+          className="mt-48 fade-from-left relative after:absolute after:inset-6 after:content-[''] after:opacity-20 after:-z-10"
         >
           I am{" "}
           <span className="text-highlight1">

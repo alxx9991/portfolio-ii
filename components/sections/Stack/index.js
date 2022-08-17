@@ -9,7 +9,7 @@ import JavascriptIcon from "../../../assets/javascript-icon.svg";
 import TailwindIcon from "../../../assets/tailwind-icon.svg";
 import ReactIcon from "../../../assets/react-icon.svg";
 import NextIcon from "../../../assets/nextjs-icon.svg";
-import PrismicIcon from "../../../assets/prismic-icon.svg";
+import PythonIcon from "../../../assets/python-icon.svg";
 
 const stackObjects = [
   { icon: <TypescriptIcon />, description: "Typescript" },
@@ -17,7 +17,7 @@ const stackObjects = [
   { icon: <TailwindIcon />, description: "TailwindCSS" },
   { icon: <ReactIcon />, description: "React" },
   { icon: <NextIcon />, description: "NextJS" },
-  { icon: <PrismicIcon />, description: "Prismic" },
+  { icon: <PythonIcon />, description: "Python" },
 ];
 
 const Stack = () => {
