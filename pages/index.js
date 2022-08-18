@@ -11,6 +11,7 @@ const HomePage = () => {
           name="Description"
           content="Portfolio site showcasing some of Alex's work"
         ></meta>
+        <link rel="shortcut icon" href="/A.png" />
       </Head>
       <Layout>
         <Hero></Hero>
