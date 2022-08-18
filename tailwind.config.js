@@ -36,10 +36,11 @@ module.exports = {
     colors: {
       primary40: "#1F254C",
       highlight1: "#A65BFF",
-      highlight2: "#817CFF",
-      bg: "#09101A",
+      highlight2: "#9995ff",
+      bg: "#0a1119",
       grey: "#cecece",
       white: "#fcfcfc",
+      transparent: "rgba(0,0,0,0)",
     },
     extend: {
       screens: {
