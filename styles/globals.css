@@ -28,7 +28,7 @@
     @apply font-general;
     @apply bg-bg;
     @apply text-white;
-    @apply text-[14px] md:text-[15px] 2xl:text-[16px];
+    @apply text-[12px] md:text-[13px] 2xl:text-[15px];
     font-weight: 400;
     min-height: 100%;
   }
