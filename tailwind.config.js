@@ -50,8 +50,8 @@ module.exports = {
       gridTemplateColumns: {
         sm: "2rem repeat(4, 1fr) 2rem",
         md: "3rem repeat(8, 1fr) 3rem",
-        xl: "10% repeat(12,1fr) 10%",
-        "2xl": "15% repeat(12,1fr) 15%",
+        xl: "12% repeat(12,1fr) 12%",
+        "2xl": "17% repeat(12,1fr) 17%",
       },
       gridTemplateRows: {
         "max-content": "max-content",
