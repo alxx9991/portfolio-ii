@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="subtitle text-center text-grey mb-48 mt-2"
         >
-          A Young Frontend Developer
+          A Junior Frontend Developer
         </motion.h2>
       </Row>
     </div>
