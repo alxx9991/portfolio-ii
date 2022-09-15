@@ -17,7 +17,7 @@ const Work = () => {
           viewport={{ once: true }}
           className="text-highlight2 my-6 md:my-8 text-center md:text-left"
         >
-          Select Projects
+          <span className="heading-gradient">Select Projects</span>
         </motion.h3>
       </Row>
       <WorkItem
@@ -34,6 +34,8 @@ const Work = () => {
         description={
           "Aesthetic, animated portfolio for a product designer built with modern Javascript and CSS frameworks."
         }
+        link={"https://www.annahe.xyz/"}
+        github={"https://github.com/alxx9991/annas-portfolio"}
       ></WorkItem>
       <WorkItem
         image={

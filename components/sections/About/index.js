@@ -10,9 +10,9 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
-          className="my-6 md:my-8 text-highlight2 text-center md:text-left"
+          className="my-6 md:my-8 text-center md:text-left"
         >
-          About
+          <span className="heading-gradient">About</span>
         </motion.h3>
       </Row>
       <Row ss={1} es={7} sm={2} em={10} sl={3} el={13} sml={3} eml={9}>

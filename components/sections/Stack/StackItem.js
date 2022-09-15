@@ -15,7 +15,7 @@ const StackItem = (props) => {
       viewport={{ once: true, amount: 0.8 }}
       className="flex flex-col items-center gap-4"
     >
-      <div>{props.children}</div>
+      <motion.div whileHover={{ y: -3 }}>{props.children}</motion.div>
       <p>{props.description}</p>
     </motion.div>
   );

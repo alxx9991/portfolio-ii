@@ -65,7 +65,7 @@ const Footer = () => {
       </Row>
       <Row ss={1} es={7} sm={2} em={10} sl={3} el={13} sml={3} eml={9}>
         <p className="text-b2 mt-16 mb-[-8%] text-center md:text-left">
-          © Built by Alex, designed by Anna
+          © 2022 Built by Alex
         </p>
       </Row>
     </div>

@@ -42,9 +42,9 @@ const Stack = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-highlight2 my-6 md:my-8 text-center md:text-left"
+          className="my-6 md:my-8 text-center md:text-left"
         >
-          My Current Stack
+          <span className="heading-gradient">My Current Stack</span>
         </motion.h3>
       </Row>
       <Row ss={1} es={7} sm={2} em={10} sl={3} el={13} sml={3} eml={9}>

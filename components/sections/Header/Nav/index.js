@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import GitLogo from "../../../../assets/git-logo.svg";
 import { motion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
+import React from "react";
 
 const Nav = () => {
   const linkInitial = { opacity: 0, y: -15 };
@@ -76,4 +77,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default React.memo(Nav);

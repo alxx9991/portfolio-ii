@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Layout = (props) => {
   return (
-    <div className="full-grid relative">
+    <div className="full-grid relative" id="home">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
