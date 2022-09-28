@@ -10,7 +10,7 @@ const Layout = (props) => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 1.5 }}
+        transition={{ delay: 2, duration: 2 }}
         className="background"
       >
         <Image src={BackgroundImage} objectFit="cover" layout="fill"></Image>
