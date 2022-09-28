@@ -4,6 +4,8 @@ import Image from "next/image";
 import GuildImage from "../../../assets/guild.png";
 import ShareSplitImage from "../../../assets/sharesplit.png";
 import AnnaPortfolioImage from "../../../assets/annasPortfolio.png";
+import PortalImage from "../../../assets/portal.png";
+
 import { motion } from "framer-motion";
 
 const Work = () => {
@@ -23,19 +25,17 @@ const Work = () => {
       <WorkItem
         image={
           <Image
-            src={AnnaPortfolioImage}
+            src={PortalImage}
             width={864}
             height={445}
             loading="eager"
           ></Image>
         }
-        technologies={["React", "NextJS", "TailwindCSS"]}
-        name={"Anna's Portfolio"}
+        technologies={["React", "Redux", "TailwindCSS", "Flask"]}
+        name={"Medical Image Segmentation Portal"}
         description={
-          "Aesthetic, animated portfolio for a product designer built with modern Javascript and CSS frameworks."
+          "Frontend for web portal which allows researchers to upload medical images to a machine learning server to perform automatic cancer cell identification, and download the completed masks."
         }
-        link={"https://www.annahe.xyz/"}
-        github={"https://github.com/alxx9991/annas-portfolio"}
       ></WorkItem>
       <WorkItem
         image={
@@ -54,6 +54,24 @@ const Work = () => {
         link="https://share-split.netlify.app/"
         github="https://github.com/alxx9991/split-share"
       ></WorkItem>
+      <WorkItem
+        image={
+          <Image
+            src={AnnaPortfolioImage}
+            width={864}
+            height={445}
+            loading="eager"
+          ></Image>
+        }
+        technologies={["React", "NextJS", "TailwindCSS"]}
+        name={"Anna's Portfolio"}
+        description={
+          "Aesthetic, animated portfolio for a product designer built with modern Javascript and CSS frameworks."
+        }
+        link={"https://www.annahe.xyz/"}
+        github={"https://github.com/alxx9991/annas-portfolio"}
+      ></WorkItem>
+
       <WorkItem
         image={
           <Image
