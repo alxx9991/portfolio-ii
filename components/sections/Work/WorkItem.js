@@ -32,8 +32,19 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="flex flex-col gap-6 content-gradient pt-20"
+        className="flex flex-col gap-6 content-gradient pt-20 relative"
       >
+        {link ? null : (
+          <motion.p
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-white px-2 py-1 font-medium  rounded-xl bg-highlight2 w-max -mt-10"
+          >
+            Coming soon ...
+          </motion.p>
+        )}
         <motion.a
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
