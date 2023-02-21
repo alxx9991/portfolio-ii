@@ -1,6 +1,5 @@
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
-import BackgroundImage from "../../assets/background-thingys.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -13,7 +12,11 @@ const Layout = (props) => {
         transition={{ delay: 1, duration: 2 }}
         className="background"
       >
-        <Image src={BackgroundImage} objectFit="cover" layout="fill"></Image>
+        <Image
+          src="/background-thingys.svg"
+          objectFit="cover"
+          layout="fill"
+        ></Image>
       </motion.div>
       <Header></Header>
       {props.children}
