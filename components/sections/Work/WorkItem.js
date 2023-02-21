@@ -32,7 +32,7 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="flex flex-col gap-6 content-gradient pt-20 relative"
+        className="flex flex-col gap-6 content-gradient pt-10 md:pt-20 relative"
       >
         {/* {link ? null : (
           <motion.p
@@ -73,7 +73,7 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
             }
           ></motion.div>
         </motion.a>
-        <div className="flex flex-col gap-2 md:gap-4 mb-24 md:mb-36">
+        <div className="flex flex-col gap-2 md:gap-4 mb-20 md:mb-36">
           <Row className="flex flex-col-reverse gap-2 md:flex-row md:items-center md:justify-between">
             <motion.p
               initial={{ opacity: 0, y: -10 }}
@@ -84,7 +84,7 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
             >
               {name}
             </motion.p>
-            <div className="flex flex-row gap-8">
+            <div className="flex-row gap-8 hidden md:flex">
               {github && (
                 <motion.a
                   initial={linkInitial}

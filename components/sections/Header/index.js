@@ -8,7 +8,7 @@ const Header = () => {
   const scrollPosition = useScrollPosition();
 
   const headerClasses =
-    "full-width-section flex-row backdrop-blur-2xl z-10 sticky top-0 hidden md:grid justify-between min-h-0";
+    "full-width-section flex-row backdrop-blur-2xl z-10 sticky top-0 grid justify-between min-h-0 -mx-10 md:mx-0";
 
   return (
     <motion.header

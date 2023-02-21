@@ -67,9 +67,9 @@ const Nav = () => {
   });
 
   return (
-    <Row ss={1} es={1} sm={4} em={10} sl={8} el={13} sml={5} eml={9}>
+    <Row ss={1} es={7} sm={4} em={10} sl={8} el={13} sml={5} eml={9}>
       <div>
-        <nav className="hidden md:flex justify-between items-center py-8 text-btn ">
+        <nav className="flex justify-between items-center py-8 text-btn px-16 md:px-0">
           {links}
         </nav>
       </div>
