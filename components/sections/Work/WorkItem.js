@@ -34,7 +34,7 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
         viewport={{ once: true }}
         className="flex flex-col gap-6 content-gradient pt-20 relative"
       >
-        {link ? null : (
+        {/* {link ? null : (
           <motion.p
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
           >
             Coming soon ...
           </motion.p>
-        )}
+        )} */}
         <motion.a
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}

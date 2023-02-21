@@ -5,6 +5,7 @@ import GuildImage from "../../../assets/guild.png";
 import ShareSplitImage from "../../../assets/sharesplit.png";
 import AnnaPortfolioImage from "../../../assets/annasPortfolio.png";
 import PortalImage from "../../../assets/portal.png";
+import AgencyImage from "../../../assets/agency-site.png";
 
 import { motion } from "framer-motion";
 
@@ -22,6 +23,23 @@ const Work = () => {
           <span className="heading-gradient">Select Projects</span>
         </motion.h3>
       </Row>
+      <WorkItem
+        image={
+          <Image
+            src={AgencyImage}
+            width={864}
+            height={445}
+            loading="eager"
+          ></Image>
+        }
+        technologies={["Astro", "Preact", "TailwindCSS"]}
+        name={"Toastr Agency Site"}
+        description={
+          "Ultra high performance site for Toastr, an agency aimed at providing fast, stylish websites for service-based businesses."
+        }
+        link="https://toastr.com.au/"
+        github="https://github.com/alxx9991/toastr-astro"
+      ></WorkItem>
       <WorkItem
         image={
           <Image
