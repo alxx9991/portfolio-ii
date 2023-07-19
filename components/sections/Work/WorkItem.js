@@ -56,6 +56,8 @@ const WorkItem = ({ image, name, description, technologies, github, link }) => {
               e.preventDefault();
             }
           }}
+          target="_blank"
+          rel="noreferrer"
         >
           {image}
           <motion.div

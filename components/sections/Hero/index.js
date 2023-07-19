@@ -34,7 +34,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className=""
           >
-            I am{" "}
+            Hi, I{"'"}m{" "}
             <span className="text-transparent  bg-gradient-to-r from-[#FFAA5B] to-highlight1 bg-clip-text">
               Alex <span className="hidden xl:inline">Lin</span>
             </span>
@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="subtitle text-center text-grey mb-48 mt-2"
         >
-          The Junior Frontend Developer
+          An aspiring full-stack developer
         </motion.h2>
       </Row>
     </div>

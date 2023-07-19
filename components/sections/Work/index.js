@@ -6,6 +6,7 @@ import ShareSplitImage from "../../../assets/sharesplit.png";
 import AnnaPortfolioImage from "../../../assets/annasPortfolio.png";
 import PortalImage from "../../../assets/portal.png";
 import AgencyImage from "../../../assets/agency-site.png";
+import HKImage from "../../../assets/hk.png";
 
 import { motion } from "framer-motion";
 
@@ -20,9 +21,26 @@ const Work = () => {
           viewport={{ once: true }}
           className="text-highlight2 my-6 md:my-8 text-center md:text-left"
         >
-          <span className="heading-gradient">Select Projects</span>
+          <span className="heading-gradient">Check out my projects!</span>
         </motion.h3>
       </Row>
+      <WorkItem
+        image={
+          <Image
+            src={HKImage}
+            width={864}
+            height={445}
+            loading="eager"
+          ></Image>
+        }
+        technologies={["Astro", "Preact", "TailwindCSS"]}
+        name={"HK Hairdresser Business Site"}
+        description={
+          "Beautiful website for my local hairdresser, helping him to improve his online conversion rate by over 60%!"
+        }
+        link="https://hkhairdresser.com.au/"
+        github="https://github.com/alxx9991/hk-hairdresser"
+      ></WorkItem>
       <WorkItem
         image={
           <Image
@@ -52,7 +70,7 @@ const Work = () => {
         technologies={["React", "Redux", "TailwindCSS", "Flask"]}
         name={"Medical Image Segmentation Portal"}
         description={
-          "Frontend for web portal which allows researchers to upload medical images to a machine learning server to perform automatic cancer cell identification, and download the completed masks."
+          "Frontend for web portal which allows researchers to upload medical images to a machine learning server to perform automatic cancer cell identification, and download the completed results."
         }
       ></WorkItem>
       <WorkItem
